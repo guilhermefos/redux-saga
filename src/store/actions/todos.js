@@ -5,6 +5,13 @@ export const addTodo = (text) => ({
   }
 });
 
+export const dispatchAddTodo = (text) => ({
+  type: 'DISPATCH_ADD_TODO',
+  payload: {
+    text
+  }
+});
+
 export const toggleTodo = (id) => ({
   type: 'TOGGLE_TODO',
   payload: {
